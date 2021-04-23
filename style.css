@@ -16,7 +16,8 @@ html body{
 
 /* Navbar */
 .main{
-    background-image: url("images/bg-img.jpg");
+    /*background-image: url("images/bg-img.jpg");*/
+    background-color: darkslategray;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -61,7 +62,7 @@ h6.text{
 
 /* Banner-section */
 .img-back{
-    background-color: #000033;
+    background-color: darkslategray;
 }
 .img-holder{
     margin-top: 30px;
