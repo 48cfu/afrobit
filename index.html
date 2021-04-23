@@ -1,9 +1,413 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph..</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afrobit Validator</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+
+    <!-- bootstrap cdn links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        code {
+          font-family: Consolas,"courier new";
+          color: crimson;
+          background-color: #f1f1f1;
+          padding: 2px;
+          font-size: 105%;
+        }
+    </style>
+</head>
+<body>
+<!-- navbar -->
+<div class="main">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="100" height="100"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="https://t.me/mina_nigeria" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+                    </li>
+                    <!-- <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fab fa-discord fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#"><i class="fab fa-github fa-2x"></i></a>
+                    </li> -->
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- body-content -->
+    <div class="container display">
+        <center>
+        <img class="mt-5" src="images/logo.png" alt="logo">
+        <h3 class="pt-5 heading">Support The African Blockchain Community</h3>
+        <h1 class="pt-2 sub-heading">Afrobit Mina Validator
+        </h1>
+            <br>
+        <h6 class="text">Afrobit is one of the first African-run validator in Mina mainnet. Our mission is to raise awareness of blockchain technologies to our African fellows. </h6>
+<br>
+            <br>
+            <a href="#delegate"> <button class="btn btn-lg join-btn btn-primary" type="button">Delegate to Afrobit</button></a>
+
+
+        </center>
+    </div>
+
+</div>
+
+<!-- image banner -->
+<div class="img-back">
+<div class="container"  style="background-color: #f1f1f1;">
+    <a name="delegate">
+    <!--<img src="images/image-holder.jpg" class="img-holder img-fluid" alt="banner">-->
+    <code>
+        mina client delegate-stake \ <br/>
+        -receiver B62qorXXHv971Kvnq91TkvWsRAvMCB8yszCX6yUhpyZseKcibSZSDSF \ <br/>
+        -sender <YOUR_MINA_PUBLIC_KEY> \ <br/>
+        -fee 0.1 <br/>
+        </code>
+</a>
+</div>
+</div>
+<br>
+
+<!-- Competition -->
+<!--
+<div class="container">
+    <h2 class="text-center">COMPETITION DETAILS</h2>
+<br>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+         <img src="images/prize-icon.svg" alt="prize" width="70" height="70">
+            <h3 class="pt-2 font-weight-bold">Prizes</h3>
+            <ul class="mt-5 prize-list">
+                <li>  <img src="images/prize-icon.svg" alt="prize" width="35" height="35"></li>
+                <li class="pt-1 pl-2"><p>Top StakeONator - 250 NEAR</p></li>
+            </ul>
+            <hr>
+
+            <ul class="mt-1 prize-list">
+                <li>  <img src="images/prize-icon.svg" alt="prize" width="35" height="35"></li>
+                <li class="pt-1 pl-2"><p>Top StakeONator - 250 NEAR</p></li>
+            </ul>
+            <hr>
+
+            <ul class="mt-1 prize-list">
+                <li>  <img src="images/prize-icon.svg" alt="prize" width="35" height="35"></li>
+                <li class="pt-1 pl-2"><p>Top StakeONator - 250 NEAR</p></li>
+            </ul>
+            <hr>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/calendar.svg" alt="calender" width="60" height="60">
+            <h3 class="pt-2 font-weight-bold">MARCH 1ST - MAY 1ST</h3>
+            <p class="calender-text pt-5">
+                The OSA is sponsoring a validator competition to find top validators, devs,  sysadmins and mods to join our
+                NEAR TestNet network!
+            </p>
+            <br>
+            <img src="images/flags.svg" alt="flags" width="60" height="60">
+            <br>
+            <a class="stake" href="#">STAKE YOUR SKILLS</a>
+            <br>
+            <br>
+            <h5>Become The Top StakeONator!</h5>
+            <br>
+            <a href="#"><button class="btn btn-lg btn-success">Register Now</button></a>
+            <br>
+            <br>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/rules.svg" alt="rules" width="70" height="70">
+            <h3 class="pt-2 font-weight-bold">Rules</h3>
+            <ul class="mt-5 ml-5 prize-list">
+                <li>  <img src="images/tick.svg" alt="tick" width="18" height="18"></li>
+                <li class=" pl-2"><p>Must Be A Real User - No BOTS</p></li>
+
+            </ul>
+            <hr class="rules-lines">
+            <ul class=" ml-5 prize-list">
+                <li>  <img src="images/tick.svg" alt="tick" width="18" height="18"></li>
+                <li class=" pl-2"><p>Must Be A Real User - No BOTS</p></li>
+
+            </ul>
+            <hr class="rules-lines">
+            <ul class=" ml-5 prize-list">
+                <li>  <img src="images/tick.svg" alt="tick" width="18" height="18"></li>
+                <li class=" pl-2"><p>Must Be A Real User - No BOTS</p></li>
+
+            </ul>
+            <hr class="rules-lines">
+            <ul class=" ml-5 prize-list">
+                <li>  <img src="images/tick.svg" alt="tick" width="18" height="18"></li>
+                <li class=" pl-2"><p>Must Be A Real User - No BOTS</p></li>
+
+            </ul>
+            <hr class="rules-lines">
+            <ul class=" ml-5 prize-list">
+                <li>  <img src="images/tick.svg" alt="tick" width="18" height="18"></li>
+                <li class=" pl-2"><p>Must Be A Real User - No BOTS</p></li>
+
+            </ul>
+            <br>
+            <img src="images/ranking.svg" alt="rank" width="60" height="60">
+            <br>
+            <a class="stake" href="#">CHECK YOUR RANK</a>
+            <br>
+            <br>
+            <a href="#"><button class="btn btn-lg btn-primary">Scoreboard</button></a>
+            <br>
+            <br>
+        </div>
+    </div>
+    <hr style="border: 1px solid black">
+</div>
+<br>
+<br>
+-->
+<!-- Accordian Section -->
+<!--
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-8 col-md-8 col-sm-12 text-center">
+
+            <img src="images/maze.svg" alt="challenge" width="50" height="50">
+            <br>
+            <a href="#" class="stake pt-2 font-weight-bold">CHALLENGES</a>
+            <br>
+            <br>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div class="panel panel-custom">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-plus"></i>
+                                Collapsible Group Item #1
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body animated zoomOut">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="panel panel-custom">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-plus"></i>
+                                Collapsible Group Item #2
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body animated zoomOut">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="panel panel-custom">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-plus"></i>
+                                Collapsible Group Item #3
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body animated zoomOut">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-custom">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fas fa-plus"></i>
+                                Collapsible Group Item #4
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body animated zoomOut">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-custom">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fas fa-plus"></i>
+                                Collapsible Group Item #5
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body animated zoomOut">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+
+                </div>
+
+
+        </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center discord-community">
+            <img src="images/discord.svg" alt="discord" width="50" height="50">
+            <br>
+            <a href="#" class="stake pt-2 font-weight-bold">COMMUNITY</a>
+            <br>
+            <br>
+            <a href="#"><button class="btn btn-lg btn-primary">Join Us</button></a>
+        </div>
+
+    </div>
+    <br>
+   <p class="text-center">The OSA and its members reserve the right to change the rules of the competition as necessary and to disqualify participants as needed.
+   </p>
+    <hr style="border: 1px solid black">
+</div>
+<br>
+<br>
+-->
+<!-- About -->
+<!--
+<div class="container">
+    <h1 class="text-center font-weight-bold">About GuildNet</h1>
+    <br>
+    <h5 class="text-center">The first decentralized sharded implementation of NEAR.</h5>
+    <h6 class="text-center">A TestNet with Fast transaction times, scalability and low transaction costs</h6>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+         <img src="images/about-1.png" alt="about">
+            <h4 class="font-weight-bold">Sharding Enabled</h4>
+            <h6>GuildNet runs 8 shards with 100 seats each.</h6>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/about-2.png" alt="about">
+            <h4 class="font-weight-bold">Sharding Enabled</h4>
+            <h6>GuildNet runs 8 shards with 100 seats each.</h6>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/about-3.jpg" alt="about">
+            <h4 class="font-weight-bold">Sharding Enabled</h4>
+            <h6>GuildNet runs 8 shards with 100 seats each.</h6>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/about-1.png" alt="about">
+            <h4 class="font-weight-bold">Sharding Enabled</h4>
+            <h6>GuildNet runs 8 shards with 100 seats each.</h6>
+            <a href="#"><button class="btn btn-lg btn-primary">Join Us</button></a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/about-2.png" alt="about">
+            <h4 class="font-weight-bold">Sharding Enabled</h4>
+            <h6>GuildNet runs 8 shards with 100 seats each.</h6>
+            <a href="#"><button class="btn btn-lg btn-primary">Join Us</button></a>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <img src="images/about-3.jpg" alt="about">
+            <h4 class="font-weight-bold">Sharding Enabled</h4>
+            <h6>GuildNet runs 8 shards with 100 seats each.</h6>
+            <a href="#"><button class="btn btn-lg btn-primary">Join Us</button></a>
+        </div>
+
+    </div>
+
+</div>
+<br>
+<br>
+-->
+<!-- Footer -->
+
+<footer class="footer">
+<!--
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <img src="images/logo.png" alt="logo">
+                <br>
+                <p>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                <br>
+                <br>
+                <h2>Links</h2>
+                <br>
+                <ul class="link-list">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                <br>
+                <br>
+                <h2>Links</h2>
+                <br>
+                <ul class="link-list">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+-->
+</footer>
+</body>
 </html>
